@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatterBox</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Header -->
+        <div class="name">
+            <span class="text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-user text-white"></i></span>
+            <input type="text" name="name-inp" class="bg-zinc-800 text-white text-lg sm:text-xl pl-4 md:text-2xl w-full px-2 outline-none" id="name-inp" value="Anonymous" maxlength="20">
+        </div>
+
+        <!-- Message Container -->
+        <div class="message-container" id="message-container">
+            <div class="message-left"></div>
+            <div class="message-right"></div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="message-feedback">
+            <p class="feedback" id="feedback"></p>
+        </div>
+
+        <!-- Message Form -->
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input" placeholder="Type a message...">
+            <button type="submit" class="send-button">
+                Send <i class="fas fa-paper-plane text-white"></i>
+            </button>
+        </form>
+    </div>
+
+    <h3 class="total-clients" id="total-clients">
+        Total Clients: 3
+    </h3>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

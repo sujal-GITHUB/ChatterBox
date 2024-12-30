@@ -1,0 +1,36 @@
+{
+  "name": "chatterbox",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sujal-GITHUB/ChatterBox#readme",
+  "bugs": {
+    "url": "https://github.com/sujal-GITHUB/ChatterBox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujal-GITHUB/ChatterBox.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build:css": "postcss src/styles.css -o dist/styles.css",
+    "watch:css": "postcss src/styles.css -o dist/styles.css --watch"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^5.6.3",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.17"
+  }
+}
