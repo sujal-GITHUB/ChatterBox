@@ -1,7 +1,7 @@
 {
   "name": "chatterbox",
   "version": "1.0.0",
-  "description": "",
+  "description": "A real-time chat application using Express and Socket.io.",
   "homepage": "https://github.com/sujal-GITHUB/ChatterBox#readme",
   "bugs": {
     "url": "https://github.com/sujal-GITHUB/ChatterBox/issues"
@@ -11,22 +11,19 @@
     "url": "git+https://github.com/sujal-GITHUB/ChatterBox.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Sujal Kumar",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "build": "echo 'No build step required'"
+    "build": "echo 'No build step required'",
+    "predeploy": "npm install --production",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "express": "^4.21.2",
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
-    "nodemon": "^3.1.9",
     "socket.io": "^4.8.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20"
   }
 }
